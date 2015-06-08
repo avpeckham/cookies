@@ -1,0 +1,13 @@
+this is the detail page.
+
+<%= @villain_details %>
+
+
+<% @cookies.each do |key, val| %>
+	<h3><%= key %></h3>
+	<ul>
+		<% val[:ingredients].each do |ingredients| %>
+			<li> <%= ingredients %></li>
+		<% end %>
+	</ul>
+<% end %>

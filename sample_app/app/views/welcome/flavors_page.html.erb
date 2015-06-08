@@ -1,0 +1,8 @@
+Gran Gran offers so very many different cookies. Here are today's specials: 
+
+
+<% @cookies.each do |key, val| %>
+	<ul>
+	<li><%= link_to "#{key}", "treats/#{key}" %></li>
+	</ul>
+<% end %>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SampleApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header class="header intro">
+	<%# link_to "Home", home_path %>
+	<%= link_to "Welcome", welcome_path %>
+	<%= link_to "About Gran Gran", about_path %>
+	<%= link_to "Daily Flavours", flavors_path %>
+	</br>
+	</br>
+	</br>
+</header>
+<%= yield %>
+
+<footer>
+	</br>
+	</br>
+	</br>
+	<div class="intro center">Contact: Call 617-555-5555, or email info@grangran.com.</div> 
+</footer>
+
+</body>
+</html>
